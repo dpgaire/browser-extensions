@@ -1,9 +1,6 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 body{
@@ -22,6 +19,7 @@ body{
   font-size: 28px;
   text-align: center;
   text-decoration: underline;
+  line-height: 1;
 }
 .wrapper{
   min-width: 405px;
@@ -33,7 +31,7 @@ body{
 }
 .task-input{
   height: 52px;
-  padding: 0 25px;
+  /* padding: 0 25px; */
   position: relative;
 }
 .task-input img{
@@ -43,7 +41,7 @@ body{
 }
 .task-input input{
   height: 100%;
-  width: 100%;
+  width: max-content;
   outline: none;
   font-size: 18px;
   border-radius: 5px;
@@ -125,7 +123,7 @@ body{
   font-size: 17px;
   margin-bottom: 18px;
   padding-bottom: 16px;
-  align-items: flex-start;
+  align-items: center;
   border-bottom: 1px solid #ccc;
 }
 .task-box .task:last-child{
@@ -135,7 +133,7 @@ body{
 }
 .task-box .task label{
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .task label input{
   margin-top: 7px;
