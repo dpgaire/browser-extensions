@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blocked Page</title>
+</head>
+<body>
+  <h1>URL Blocked</h1>
+  <p>This URL is blocked by DP Gaire Extension.</p>
+  <button id="exitBtn">Exit</button>
+
+  <script>
+    // Redirect to the original URL when "Exit" button is clicked
+    document.getElementById('exitBtn').addEventListener('click', function() {
+      chrome.runtime.sendMessage({ action: 'unblockURL' });
+    });
+  </script>
+</body>
+</html>

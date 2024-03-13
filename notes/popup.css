@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 400px;
+  min-height: 200px;
+  padding: 10px 20px;
+  background: black;
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  width: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.popup-container {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  line-height: 5px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#noteInput {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+
+}
+
+#saveNoteBtn {
+  padding: 5px 15px;
+  background-color: #43D685;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#saveNoteBtn:hover {
+  background-color: #FDCF42;
+}
+
+.selected-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.note-box {
+  background-color: #282c34;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: auto !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.copy-button,
+.delete-button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+}
+
+.copy-button {
+  background-color: #43D685;
+}
+
+.delete-button {
+  background-color: #ff6b6b;
+}
+
+.copy-button:hover,
+.delete-button:hover {
+  filter: brightness(1.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.small-link {
+  font-size: 12px;
+  color: rgb(182, 182, 255);
+  text-decoration: none;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.small-link:hover {
+  text-decoration: underline;
+}

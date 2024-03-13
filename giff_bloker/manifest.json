@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "GIF Blocker",
+  "version": "1.0",
+  "description": "Blocks GIF images on web pages",
+  "permissions": ["<all_urls>", "webNavigation"],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

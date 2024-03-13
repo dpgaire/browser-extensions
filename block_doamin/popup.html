@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Domain Blocker</title>
+  <style>
+    /* Simple styling for the popup */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 8px 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blocked Domains</h1>
+  <input type="text" id="domainInput" placeholder="Enter domain">
+  <button id="addBtn">Add Domain</button>
+  <ul id="blockedList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
